@@ -5,6 +5,11 @@ namespace Laboratorio_1
     {
         public string name;
         public string lastname;
+        public Human(string x , string y) 
+        {
+            name = x;
+            lastname = y;
+        }
         public int RPS()
         {
             Random _throw = new Random();
