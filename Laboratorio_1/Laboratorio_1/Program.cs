@@ -6,8 +6,8 @@ namespace Laboratorio_1
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("cambios");
+            Human bob = new Human("Bob" , "Kunga");
+            Console.WriteLine(bob.RPS());
         }
     }
 }
