@@ -3,12 +3,22 @@ namespace Laboratorio_1
 {
     public class Human
     {
-        public string name;
-        public string lastname;
-        public Human(string x , string y) 
+        private string name;
+        private string lastname;
+        public string Name
         {
-            name = x;
-            lastname = y;
+            get => name;
+            set => name = value;
+        }
+        public string Lastname
+        {
+            get => lastname;
+            set => lastname = value;
+        }
+        public Human(string name,string lastname)
+        {
+            this.name = name;
+            this.lastname = lastname;
         }
         public int RPS()
         {
@@ -16,4 +26,6 @@ namespace Laboratorio_1
             return _throw.Next(0, 3);
         }
     }
-}
+}           
+
+                    
